@@ -13,6 +13,13 @@ const CommentSchema = new Schema({
   }
 });
 
+comments: [
+  {
+    type: Schema.Types.ObjectId,
+    ref: 'Comment'
+  }
+]
+
 const Comment = model('Comment', CommentSchema);
 
 module.exports = Comment;
