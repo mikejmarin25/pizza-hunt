@@ -13,7 +13,7 @@ const CommentSchema = new Schema({
   }
 });
 
-comments: [
+ comments: [
   {
     type: Schema.Types.ObjectId,
     ref: 'Comment'
